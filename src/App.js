@@ -18,7 +18,7 @@ function App() {
 
   return (
     <div className="App">
-      <UserInput changed={setUser}/>
+      <UserInput changed={setUser} username={userState.username}/>
       <UserOutput username="first"/>
       <UserOutput username={userState.username}/>
       <UserOutput username="third"/>

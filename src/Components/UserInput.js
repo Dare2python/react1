@@ -7,8 +7,10 @@ function UserInput(props) {
         <input type="text" onChange={(event) => {
             console.log(event);
             return props.changed(event);
-        }
-    }/>
+            }}
+            value={props.username}
+
+        />
     </div>
   );
 }
